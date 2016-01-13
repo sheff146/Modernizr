@@ -19,8 +19,7 @@ define(['Modernizr', 'prefixed'], function(Modernizr, prefixed) {
   var indexeddb;
   try {
     indexeddb = prefixed('indexedDB', window);
-  } catch (e) {
-  }
+  } catch (e) { }
 
   Modernizr.addTest('indexeddb', !!indexeddb);
 
